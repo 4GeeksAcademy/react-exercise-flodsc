@@ -10,3 +10,47 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.traffic-light-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.traffic-light {
+    width: 100px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.selected {
+    box-shadow: 0 0 15px 5px white;
+}
+
